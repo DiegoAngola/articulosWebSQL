@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="carrito.png">
+</head>
+
+<body>
+
+    <input type="button" value="Borrar Tabla" onclick="dropTable()">
+    <h1>PRODUCTOS</h1>
+    <section class="buscar">
+        <div id="busqueda">
+            <img src="lupa.png" id="lupa" onclick="buscarProductos()">
+            <input type="text" placeholder="Buscar..." id="aBuscar" autocomplete="off">
+            
+        </div>
+        <input type="button" id="salir" value="Salir Busqueda" onclick="salirBusqueda()">
+
+    </section>
+
+
+
+    <section id="agrego">
+        <h2 id="titulo">Nuevo Producto</h2>
+        <label for="desc" class="lblclass">Indique descripción</label>
+        <input type="text" id="desc"><br>
+        <label for="imagen" class="lblclass">Dirección de imagen</label>
+        <input type="text" id="dirImg"><br>
+        <div class="botones">
+            <input type="button" value="Agregar" id="btn_uno" onclick="agregar()">
+            <input type="button" value="Listado" id="btn_dos" onclick="listado()">
+        </div>
+    </section>
+
+    <div class="contenedor">
+        <section id="producto">
+            <article>
+                <h3 class="descripcion"></h3>
+                <img src="" class="imagen">
+            </article>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
